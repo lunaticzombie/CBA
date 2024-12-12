@@ -27,7 +27,7 @@ public class Pet {
         ArrayList<HashMap<String,String>> tags = new ArrayList<HashMap<String,String>>();
         tags.add(tag);
 
-        this.setId("0");
+        this.setId("123");
         this.setName("Tommy");
         this.setCategory(categoryMap);
         this.setPhotoUrls(photoUrlList);

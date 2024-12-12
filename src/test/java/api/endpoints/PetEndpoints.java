@@ -7,6 +7,7 @@ import io.restassured.response.Response;
 import api.payload.Pet;
 
 public class PetEndpoints {
+    //Note: later we can move urls to properties
     public static String base_url = 
         "https://petstore.swagger.io/v2/pet";
     public static String base_url_withId = 
