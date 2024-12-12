@@ -12,6 +12,29 @@ public class Pet {
     private ArrayList<HashMap <String,String>> tags;
     private String status;
 
+    public Pet() {
+        HashMap<String,String> categoryMap = new HashMap<String, String>();
+        categoryMap.put("id","1");
+        categoryMap.put("name","Dogs");
+
+        ArrayList<String> photoUrlList = new ArrayList<String>();
+        photoUrlList.add("dummyPhotoURL");
+
+        HashMap<String,String> tag = new HashMap<String, String>();
+        tag.put("id","0");
+        tag.put("name","dummyTagNAme");
+
+        ArrayList<HashMap<String,String>> tags = new ArrayList<HashMap<String,String>>();
+        tags.add(tag);
+
+        this.setId("0");
+        this.setName("Tommy");
+        this.setCategory(categoryMap);
+        this.setPhotoUrls(photoUrlList);
+        this.setTags(tags);
+        this.setStatus("available");
+    }
+
     public String getId() {
         return id;
     }
